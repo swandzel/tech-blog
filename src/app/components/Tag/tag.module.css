@@ -1,0 +1,8 @@
+.tag {
+  color: var(--primary);
+  background: var(--primary-transparent);
+  padding: 4px 8px;
+  border-radius: 6px;
+  width: fit-content;
+  text-transform: capitalize;
+}

@@ -1,0 +1,5 @@
+.footer {
+  height: 500px;
+  background: var(--secondary);
+  margin-top: 32px;
+}

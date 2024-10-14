@@ -1,0 +1,36 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 392px;
+  height: 488px;
+  background: var(--secondary);
+  border: 1px solid #e8e8ea;
+  border-radius: 12px;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.image {
+  width: 360px;
+  height: 240px;
+  background-color: black;
+  border-radius: 12px 12px 0 0;
+}
+
+.title {
+  color: var(--textColor);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.authordate {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  color: var(--textColorGray);
+}
+
+.author {
+  font-weight: 700;
+}
