@@ -1,5 +1,29 @@
 .footer {
-  height: 500px;
-  background: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
   margin-top: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  font-weight: 700;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+.author {
+  flex: 1;
+}
+
+.links {
+  display: flex;
+  flex: 1;
+  gap: 32px;
+  list-style: none;
+  justify-content: flex-end;
 }
