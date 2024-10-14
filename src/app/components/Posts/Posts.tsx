@@ -9,7 +9,7 @@ const posts = [
     date: "20/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
-    image: "",
+    image: "/image.jpg",
     tag: "front-end",
     slug: "title",
   },
@@ -19,7 +19,7 @@ const posts = [
     date: "20/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
-    image: "",
+    image: "/image.jpg",
     tag: "front-end",
     slug: "title",
   },
@@ -29,7 +29,7 @@ const posts = [
     date: "20/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
-    image: "",
+    image: "/image.jpg",
     tag: "front-end",
     slug: "title",
   },
@@ -39,7 +39,7 @@ const posts = [
     date: "20/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
-    image: "",
+    image: "/image.jpg",
     tag: "tests",
     slug: "title",
   },
@@ -49,7 +49,7 @@ const posts = [
     date: "20/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
-    image: "",
+    image: "/image.jpg",
     tag: "back-end",
     slug: "title_slug",
   },

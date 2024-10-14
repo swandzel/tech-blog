@@ -3,6 +3,7 @@ import styles from "./post.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import Tag from "../Tag/Tag";
+import Author from "@/public/author.png";
 
 export default function Post({ post }: { post: any }) {
   return (
@@ -17,8 +18,9 @@ export default function Post({ post }: { post: any }) {
       <Tag tag={post.tag} />
       <div className={styles.title}>{post.title}</div>
       <div className={styles.authordate}>
-        <span className={post.author}>{post.author}</span>
-        <span className={post.date}>{post.date}</span>
+        <Image src={Author} width={36} height={36} alt={post.author} />
+        <span className={styles.author}>{post.author}</span>
+        <span className={styles.date}>{post.date}</span>
       </div>
     </Link>
   );
