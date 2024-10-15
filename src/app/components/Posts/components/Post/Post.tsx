@@ -2,10 +2,9 @@ import React from "react";
 import styles from "./post.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import Tag from "../Tag/Tag";
-import Author from "@/public/author.png";
+import Tag from "../../../Tag/Tag";
 import TempImg from "@/public/image.jpg";
-import AuthorWithDate from "../AuthorWithDate/AuthorWithDate";
+import AuthorWithDate from "../../../AuthorWithDate/AuthorWithDate";
 
 export default function Post({ post }: { post: any }) {
   return (
