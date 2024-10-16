@@ -67,3 +67,10 @@ export const getAllPosts = () => {
 export const getPost = (slug) => {
   return posts.find((post) => post.slug === slug);
 };
+
+export const getAllComments = async () => {
+  const data = await fetch(
+    `https://jsonplaceholder.typicode.com/posts/1/comments`
+  );
+  return data.json();
+};
