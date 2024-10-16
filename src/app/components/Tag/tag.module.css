@@ -1,6 +1,6 @@
 .tag {
-  color: var(--primary);
-  background: var(--primary-transparent);
+  color: var(--secondary);
+  background: var(--primary);
   padding: 4px 8px;
   border-radius: 6px;
   width: fit-content;

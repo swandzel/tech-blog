@@ -1,10 +1,12 @@
 import React from "react";
-import Tag from "@/app/components/Tag/Tag";
 import Image from "next/image";
+
+import Tag from "@/app/components/Tag/Tag";
 import AuthorWithDate from "@/app/components/AuthorWithDate/AuthorWithDate";
 import Comments from "@/app/components/Comments/Comments";
-import TempImg from "@/public/image.jpg";
+
 import { getPost } from "@/api/api";
+
 import styles from "./page.module.css";
 
 export default function page({ params }: { params: { slug: string } }) {

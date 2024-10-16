@@ -1,5 +1,6 @@
 .header {
-  height: 600px;
+  position: relative;
+  height: 450px;
   width: 100%;
   background: var(--secondary);
 }
@@ -8,4 +9,19 @@
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  color: white;
+  max-width: 720px;
+  left: 32px;
+  bottom: 32px;
+}
+
+.title {
+  font-size: 32px;
 }

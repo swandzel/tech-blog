@@ -3,7 +3,7 @@ const posts = [
     id: 1,
     author: "Joe Doe",
     author_image: "joe_doe",
-    date: "20/1/2024",
+    date: "7/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
     content:
@@ -16,7 +16,7 @@ const posts = [
     id: 2,
     author: "Eric Smith",
     author_image: "eric_smith",
-    date: "20/1/2024",
+    date: "16/1/2024",
     title: "How Make Next.js app fast",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime atque autem ex, beatae fugit eligendi id voluptatibus reiciendis, accusamus expedita cumque blanditiis iste harum omnis culpa debitis veritatis totam nesciunt delectus dolorem cum? Id nesciunt tenetur porro optio molestiae! Quam.",
@@ -28,7 +28,7 @@ const posts = [
     id: 3,
     author: "Joe Doe",
     author_image: "joe_doe",
-    date: "20/1/2024",
+    date: "22/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
     content:
@@ -41,7 +41,7 @@ const posts = [
     id: 4,
     author: "Joe Doe",
     author_image: "joe_doe",
-    date: "20/1/2024",
+    date: "24/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
     content:
@@ -54,7 +54,7 @@ const posts = [
     id: 5,
     author: "Eric Smith",
     author_image: "eric_smith",
-    date: "20/1/2024",
+    date: "27/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
     content:
@@ -66,7 +66,7 @@ const posts = [
 ];
 
 export const getAllPosts = () => {
-  return posts;
+  return posts.sort((a, b) => b.id - a.id);
 };
 
 export const getPost = (slug) => {
