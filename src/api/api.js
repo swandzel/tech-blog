@@ -2,6 +2,7 @@ const posts = [
   {
     id: 1,
     author: "Joe Doe",
+    author_image: "joe_doe",
     date: "20/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -13,7 +14,8 @@ const posts = [
   },
   {
     id: 2,
-    author: "Joe Doe",
+    author: "Eric Smith",
+    author_image: "eric_smith",
     date: "20/1/2024",
     title: "How Make Next.js app fast",
     content:
@@ -25,6 +27,7 @@ const posts = [
   {
     id: 3,
     author: "Joe Doe",
+    author_image: "joe_doe",
     date: "20/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -37,6 +40,7 @@ const posts = [
   {
     id: 4,
     author: "Joe Doe",
+    author_image: "joe_doe",
     date: "20/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -48,7 +52,8 @@ const posts = [
   },
   {
     id: 5,
-    author: "Joe Doe",
+    author: "Eric Smith",
+    author_image: "eric_smith",
     date: "20/1/2024",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",

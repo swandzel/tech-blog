@@ -18,7 +18,11 @@ export default function Post({ post }: { post: any }) {
       />
       <Tag tag={post.tag} />
       <div className={styles.title}>{post.title}</div>
-      <AuthorWithDate author={post.author} date={post.date} />
+      <AuthorWithDate
+        author={post.author}
+        date={post.date}
+        image={post.author_image}
+      />
     </Link>
   );
 }

@@ -17,15 +17,19 @@ export default function page({ params }: { params: { slug: string } }) {
           <div className={styles.header}>
             <Tag tag={post.tag} />
             <h1>{post.title}</h1>
-            <AuthorWithDate author={post?.author} date={post.date} />
-            <Image
-              src={TempImg}
-              alt={post.title}
-              objectFit="contain"
-              height={460}
-              className={styles.image}
+            <AuthorWithDate
+              author={post?.author}
+              date={post.date}
+              image={post.author_image}
             />
           </div>
+          <Image
+            src={TempImg}
+            alt={post.title}
+            objectFit="contain"
+            height={460}
+            className={styles.image}
+          />
           <div className={styles.content}>
             <p>{post?.content}</p>
             <p>{post?.content}</p>
