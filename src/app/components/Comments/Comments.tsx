@@ -8,7 +8,7 @@ export default async function Comments() {
 
   return (
     <div className={styles.comments}>
-      <div>Comments</div>
+      <div className={styles.title}>Comments</div>
       <ul>
         {comments.map((comment: any) => (
           <Comment comment={comment} key={comment.id} />
