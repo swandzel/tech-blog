@@ -1,12 +1,20 @@
 import React from "react";
 import styles from "./header.module.css";
 import Image from "next/image";
-import TempImg from "@/public/temp-main-image.jpg";
+import { getNewestPost } from "@/api/api";
 
 export default function Header() {
+  const post = getNewestPost();
+
   return (
     <header className={styles.header}>
-      <Image src={TempImg} objectFit="contain" alt="" />
+      <Image
+        src={`/posts/${post.image}`}
+        width={500}
+        height={600}
+        alt=""
+        className={styles.image}
+      />
     </header>
   );
 }

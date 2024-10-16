@@ -8,7 +8,7 @@ const posts = [
       "The Impact of Technology on the Workplace: How Technology is Changing",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime atque autem ex, beatae fugit eligendi id voluptatibus reiciendis, accusamus expedita cumque blanditiis iste harum omnis culpa debitis veritatis totam nesciunt delectus dolorem cum? Id nesciunt tenetur porro optio molestiae! Quam.",
-    image: "/image.jpg",
+    image: "1.webp",
     tag: "front-end",
     slug: "title",
   },
@@ -20,7 +20,7 @@ const posts = [
     title: "How Make Next.js app fast",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime atque autem ex, beatae fugit eligendi id voluptatibus reiciendis, accusamus expedita cumque blanditiis iste harum omnis culpa debitis veritatis totam nesciunt delectus dolorem cum? Id nesciunt tenetur porro optio molestiae! Quam.",
-    image: "/image.jpg",
+    image: "2.webp",
     tag: "front-end",
     slug: "how-make-next-js-app-fast",
   },
@@ -33,7 +33,7 @@ const posts = [
       "The Impact of Technology on the Workplace: How Technology is Changing",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime atque autem ex, beatae fugit eligendi id voluptatibus reiciendis, accusamus expedita cumque blanditiis iste harum omnis culpa debitis veritatis totam nesciunt delectus dolorem cum? Id nesciunt tenetur porro optio molestiae! Quam.",
-    image: "/image.jpg",
+    image: "3.webp",
     tag: "front-end",
     slug: "title",
   },
@@ -46,7 +46,7 @@ const posts = [
       "The Impact of Technology on the Workplace: How Technology is Changing",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime atque autem ex, beatae fugit eligendi id voluptatibus reiciendis, accusamus expedita cumque blanditiis iste harum omnis culpa debitis veritatis totam nesciunt delectus dolorem cum? Id nesciunt tenetur porro optio molestiae! Quam.",
-    image: "/image.jpg",
+    image: "2.webp",
     tag: "tests",
     slug: "title",
   },
@@ -59,7 +59,7 @@ const posts = [
       "The Impact of Technology on the Workplace: How Technology is Changing",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime atque autem ex, beatae fugit eligendi id voluptatibus reiciendis, accusamus expedita cumque blanditiis iste harum omnis culpa debitis veritatis totam nesciunt delectus dolorem cum? Id nesciunt tenetur porro optio molestiae! Quam.",
-    image: "/image.jpg",
+    image: "5.webp",
     tag: "back-end",
     slug: "title_slug",
   },
@@ -71,6 +71,10 @@ export const getAllPosts = () => {
 
 export const getPost = (slug) => {
   return posts.find((post) => post.slug === slug);
+};
+
+export const getNewestPost = () => {
+  return posts[posts.length - 1];
 };
 
 export const getAllComments = async () => {

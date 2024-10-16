@@ -3,14 +3,13 @@ import styles from "./post.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import Tag from "../../../Tag/Tag";
-import TempImg from "@/public/image.jpg";
 import AuthorWithDate from "../../../AuthorWithDate/AuthorWithDate";
 
 export default function Post({ post }: { post: any }) {
   return (
     <Link className={styles.post} href={`post/${post.slug}`}>
       <Image
-        src={TempImg}
+        src={`/posts/${post.image}`}
         alt={post.title}
         width={360}
         height={240}

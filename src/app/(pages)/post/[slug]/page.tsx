@@ -24,10 +24,11 @@ export default function page({ params }: { params: { slug: string } }) {
             />
           </div>
           <Image
-            src={TempImg}
+            src={`/posts/${post.image}`}
             alt={post.title}
             objectFit="contain"
             height={460}
+            width={600}
             className={styles.image}
           />
           <div className={styles.content}>
